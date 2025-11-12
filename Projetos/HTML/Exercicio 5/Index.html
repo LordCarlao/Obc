@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+</head>
+<body>
+    <h1>Formulário de Inscrição</h1>
+    <form>
+        <label for="nome">Nome:</label>
+        <br>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="contato">WhatsApp:</label>
+        <br>
+        <input type="tel" id="contato" name="contato" 
+               pattern="^\(\d{2}\)\s\d{5}-\d{4}$" 
+               placeholder="(99) 99999-9999" required>
+        <br><br>
+
+        <label>Área de Atuação:</label>
+        <br>
+        <input type="radio" id="dev-web" name="area" value="Desenvolvimento Web">
+        <label for="dev-web">Desenvolvimento Web</label>
+
+        <input type="radio" id="data-science" name="area" value="Data Science">
+        <label for="data-science">Data Science</label>
+
+        <input type="radio" id="cybersecurity" name="area" value="Cybersecurity">
+        <label for="cybersecurity">Cybersecurity</label>
+
+        <input type="radio" id="cloud" name="area" value="Cloud Computing">
+        <label for="cloud">Cloud Computing</label>
+        <br><br>
+
+        <label for="observacao">Observações:</label>
+        <br>
+        <textarea id="observacao" name="observacao" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <input type="checkbox" id="aceite" name="aceite" required>
+        <label for="aceite">Aceito receber comunicações sobre o evento.</label>
+        <br><br>
+
+        <input type="submit" value="Enviar Inscrição">
+    </form>
+</body>
+</html> 
